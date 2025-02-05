@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="styles.css">  
+</head>
+<body>
+    <header>
+        <img src="Images/download.png" alt="Logo">
+        <div>
+            <h1>Advancing Medicine with Technology & AI</h1>
+            <h2>About Us</h2>
+        </div>
+        <div class="nav">
+            <div class="navigation">
+                <ul>
+                    <li class="list">
+                        <a href="index.html">
+                            <span class="icon">
+                                <ion-icon name="home-outline"></ion-icon>
+                            </span>
+                            <span class="text">Home</span>
+                        </a>
+                    </li>
+                    <li class="list active">
+                        <a href="AboutUs.html">
+                            <span class="icon">
+                                <ion-icon name="person-outline"></ion-icon>
+                            </span>
+                            <span class="text">Profile</span>
+                        </a>
+                    </li>
+                    <li class="list">
+                        <a href="information.html">
+                            <span class="icon">
+                                <ion-icon name="information-circle-outline"></ion-icon>
+                            </span>
+                            <span class="text">information</span>
+                        </a>
+                    </li>
+                    <li class="list">
+                        <a href="ContactUS.html">
+                            <span class="icon">
+                                <ion-icon name="mail-outline"></ion-icon>
+                            </span>
+                            <span class="text">Contact US</span>
+                        </a>
+                    </li>
+                    <div class="indicater"></div>
+                </ul>
+            </div>
+            <script>
+                const list=document.querySelectorAll('.list');
+                function activeLink(){
+                    list.forEach((item)=>
+                item.classList.remove('active'));
+                this.classList.add('active');
+                }
+                list.forEach((item)=>
+            item.addEventListener('click',activeLink));
+            </script>
+            <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        </div>
+    </header>
+<main>
+        <section>
+            <h3>Who we are:</h3> 
+            <div> 
+            <img src="Images/DMgroup.png" alt="DMgroup" class="float-right">
+            <p>
+            We the data mining group focus on discovering patterns and useful information in large datasets. We specialize in sorting data into categories, identifying relationships, and grouping similar data points. We also have expertise in visualizing data and applying these techniques to solve real-world problems and research questions
+            </p> 
+        </div>
+        </section>
+        <section>
+            <h3>KHARKIV INTERNATIONAL MEDICAL UNIVERSITY - KhIMU</h3>
+        <div>
+            <img src="Images/logo2.png" alt="wound" class="KhIMU">
+            <p>
+                For this project we teamed up with KhIMU, a leading medical university known for training highly skilled healthcare professionals. KhIMU focuses on both education and research, ensuring students gain hands-on experience through internships and clinical practice. <br><br>Their involvement in this project strengthens the integration of AI in reconstructive surgery and medical training, particularly for wartime injuries. By leveraging AI-driven tools like 3D scanning, thermal imaging, and ultrasound, KhIMU aims to improve wound care and surgical outcomes. Their commitment to innovation helps shape the future of medical education and enhances healthcare practices in critical conditions
+            </p>
+        </div>
+    </section>
+        <section>
+            <h3>Our Discovery</h3> 
+            <div> <p>Gunshot wounds to soft tissue are common in the ongoing war in Ukraine, making up 58% of all injuries. About 23% of patients need reconstructive surgery due to large wounds, especially near joints. One common method is using nearby tissue to cover these wounds, as it does not require special equipment. However, predicting how the tissue will stretch and how this affects movement remains a challenge.
+
+            For successful healing, the tissue used in reconstruction needs a good blood supply. More research is needed to understand how blood flows through these tissues. To address this, we aim to develop advanced diagnostic software using artificial intelligence. This system will combine 3D scanning of wounds, thermal imaging to study blood flow in small vessels, and ultrasound to examine deeper blood circulation. By integrating these technologies, we can improve treatment and recovery for injured patients.
+        </p></div></section>
+        
+        <section><h3> The Begining of a new development </h3>
+   <div class="gallery-wrap">
+       <img src="Images/pleft.png" id="backBtn">
+       <div class="gallery">
+           <div>
+               <span><img src="Images/bild 10.jpg"></span>
+               <span><img src="Images/bild 11.jpg"></span>
+               <span><img src="Images/bild 13.png"></span>
+           </div>
+           <div>
+               <span><img src="Images/bild 22.jpg"></span>
+               <span><img src="Images/bild 33.jpg"></span>
+               <span><img src="Images/bild 12.png"></span>
+           </div>
+       </div>
+       <img src="Images/pnext.png" id="nextBtn">
+   </div>
+
+   <script>
+    let scrollContainer = document.querySelector(".gallery");
+    let backBtn = document.getElementById("backBtn");
+    let nextBtn = document.getElementById("nextBtn");
+
+    nextBtn.addEventListener("click", () => {
+        scrollContainer.style.scrollBehavior = "smooth"; 
+        scrollContainer.scrollLeft += 900;
+    });
+
+    backBtn.addEventListener("click", () => {
+        scrollContainer.style.scrollBehavior = "smooth"; 
+        scrollContainer.scrollLeft -= 900;
+    });
+   </script>
+</main>
+</body>
+</html>
