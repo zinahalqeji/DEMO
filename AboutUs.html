@@ -88,7 +88,7 @@
             <h3>Our Discovery</h3> 
             <div> <p>Gunshot wounds to soft tissue are common in the ongoing war in Ukraine, making up 58% of all injuries. About 23% of patients need reconstructive surgery due to large wounds, especially near joints. One common method is using nearby tissue to cover these wounds, as it does not require special equipment. However, predicting how the tissue will stretch and how this affects movement remains a challenge.
 
-            For successful healing, the tissue used in reconstruction needs a good blood supply. More research is needed to understand how blood flows through these tissues. To address this, we aim to develop advanced diagnostic software using artificial intelligence. This system will combine 3D scanning of wounds, thermal imaging to study blood flow in small vessels, and ultrasound to examine deeper blood circulation. By integrating these technologies, we can improve treatment and recovery for injured patients.
+            For successful healing, the tissue used in reconstruction needs a good blood supply. More research is needed to understand how blood flows through these tissues. <br> <br> To address this, we aim to develop advanced diagnostic software using artificial intelligence. This system will combine 3D scanning of wounds, thermal imaging to study blood flow in small vessels, and ultrasound to examine deeper blood circulation. By integrating these technologies, we can improve treatment and recovery for injured patients.
         </p></div></section>
         
         <section><h3> The Begining of a new development </h3>
@@ -108,7 +108,21 @@
        </div>
        <img src="Images/pnext.png" id="nextBtn">
    </div>
+   <section>
+    <h3>  An Innovation Not Far Away: Transforming Wound Diagnostics with 3D Scanning  </h3>
+    <div>
+        <img src="Images/leo.png" alt="3D Leo" class="leo">
+        <p>
+            We have identified an existing 3D scanner, the Artec Leo, as a key component for implementing our diagnostic system. <br>
+            This cutting-edge handheld scanner offers wireless operation, real-time AI-driven processing, and high-resolution structured-light scanning, making it highly suitable for capturing detailed 3D models of wounds. <br>
+            By incorporating Artec Leo into our system, we can accurately assess wound dimensions, tissue structure, and healing progress. When combined with thermal imaging for blood flow analysis and ultrasound for deeper circulation insights, this technology will significantly enhance precision diagnostics and treatment planning for injured patients.
+        </p>
+    </div>
+    <model-viewer id="threedd" src="wounded_hand.glb" autoplay camera-controls disable-zoom auto-rotate shadow-intersity="1">
 
+    </model-viewer>
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
+   </section>
    <script>
     let scrollContainer = document.querySelector(".gallery");
     let backBtn = document.getElementById("backBtn");

@@ -430,6 +430,17 @@ margin: 0 0 1.0rem 1.0rem; /* Adjust spacing as needed */
 width: 200px; /* Set the image width */
 height: auto;
 }
+.leo{ 
+    float: right;
+    margin: 0 0 1.0rem 1.0rem; /* Adjust spacing as needed */
+    width: 300px; /* Set the image width */
+    height: auto;
+    }
+#threedd {
+    width: 500px;
+    height: 450px;
+    margin-left: 200px;
+    }  
 .float-right {
     float: right;
     margin: 0 0 1.0rem 1.0rem; /* Adjust spacing as needed */
